@@ -1,0 +1,77 @@
+{{> head}}
+
+
+    {{> navbar}}
+
+
+    <div class="container">
+
+    <div style="margin-top: 40px; text-align: center;">   
+        <h1>CETIA</h1>
+        <h2>Centro Tecnologico de Innovacion Aeronautica</h2>
+    </div>
+    {{!-- <img src="assets/img/1.png" alt=""> --}}
+
+    {{> carousel}}
+
+    {{!-- <img src="assets/img/2.png" alt=""> --}}
+    <section>
+        <div style="margin-top: 200px; text-align: center; ">
+        <h1>Subida de proyectos</h1>
+            <br>
+            <div class="mb-3">
+                <form action="http://localhost:8080/update" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file" multiple>
+                    <br>
+                    <br>
+                    <input type="submit" class="btn btn-primary" value="Añadir archivo">
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <section class="quienes-somos">
+    <img src="assets/img/CETIA.png" alt="" class="cetia">
+    <a name="uno"></a>
+        <h2>¿Quienes somos?</h2>
+        <br>
+        <p>Somos un centro de investigación institucional enfocado en proponer y brindar soluciones a necesidades institucionales conforme al marco del plan investigativo, en líneas de investigación afines a desarrollo aeronáutica, electrónica aeronáutica
+            y programa antártico</p>
+        <b>Mision: </b>
+        <br>
+        <p>Promover, gestionar, desarrollar y difundir el desarrollo tecnológico aeronáutico, mediante la investigación aplicada en ciencia y tecnología, para fortalecer el progreso y la sostenibilidad de la FAC en el sector aeronáutico</p>
+        <b>Vision: </b>
+        <p>Para el 2030, ser un Centro Tecnológico líder en el ámbito de innovación tecnológica aeronáutica a nivel nacional y regional.</p>
+    </section>
+
+   {{> integrantes}}
+
+
+    {{> proyectos}}
+
+
+    {{> capacidades}}
+
+
+    <section>
+        <a name="cuatro"></a>
+        <div id="video">
+        <h3>Demostraciones</h3>
+            <video id="video" width="640" height="320" controls>
+                <source src="assets/video/CETIA1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="video">
+            <video id="video" width="640" height="320" controls>
+                <source src="assets/video/facrecortado.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    {{> investigacion}}
+
+
+
+    {{> footer}}
+
+</html>
