@@ -1,3 +1,9 @@
-## Web CETIA/FAC
+# CETIA - WEB
 
-Fase de desarrollo todavia en produccion
+Para iniciar la aplicacion recuerde usar el comando 
+
+```
+
+npm install
+
+```
